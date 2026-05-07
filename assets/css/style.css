@@ -1,10 +1,9 @@
 body {
-  font-family: "Google Sans Code", monospace;
+  font-family: "Elms Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; /* Standard weight, or 500 for slightly thicker */
+  font-weight: <weight>;
   font-style: normal;
-  font-variation-settings: "MONO" 1;
-  
+
   /* Your existing styles */
   background-color: #e5e0d8;
   color: #333;
