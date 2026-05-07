@@ -1,8 +1,16 @@
 /* --- Global Styles --- */
+
+.google-sans-code-<uniquifier> {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "MONO" 1;
+}
+
 body {
   background-color: #e5e0d8; /* Earthy beige */
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  color: #333;
   margin: 0;
   line-height: 1.6;
 }
