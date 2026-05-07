@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <title>Iza Vene</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Iza Vene</title>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <div class="main-wrapper">
-    <aside class="sidebar">
-      <h1 class="brand-name">iza<br>vene</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#philosophy">PHILOSOPHY</a></li>
-        </ul>
-      </nav>
-      <div class="footer-email">iza.vene4@gmail.com</div>
-    </aside>
 
-    <main class="content">
-      {{ content }}
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-box">
+                <a href="{{ '/' | relative_url }}">
+                    <img src="{{ '/assets/images/handwritten-logo.png' | relative_url }}" alt="iza vene" class="site-logo">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}#about">about me</a></li>
+                    <li><a href="{{ '/' | relative_url }}#work">my work</a></li>
+                    <li><a href="{{ '/' | relative_url }}#blog">blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contact">
+                <a href="mailto:iza.vene4@gmail.com">iza.vene4@gmail.com</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        {{ content }}
     </main>
-  </div>
+
+    <footer class="site-footer">
+        <p>&copy; {{ "now" | date: "%Y" }} iza vene</p>
+    </footer>
+
 </body>
 </html>
