@@ -1,46 +1,119 @@
+/* --- Global Styles --- */
 body {
-  background-color: #e5e0d8; /* Beige from your design */
+  background-color: #e5e0d8; /* Earthy beige */
+  font-family: 'Helvetica', 'Arial', sans-serif;
   color: #333;
   margin: 0;
-  font-family: sans-serif;
+  line-height: 1.6;
 }
 
-.main-wrapper {
+/* --- Header & Top Nav --- */
+.main-header {
+  padding: 30px 60px;
+  background-color: #e5e0d8;
+}
+
+.header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  padding: 40px;
+.site-logo {
+  height: 80px; /* Adjust based on your handwritten image */
+  width: auto;
 }
 
-.brand-name {
-  font-size: 60px;
-  color: #d68c5d; /* Terracotta orange */
-  line-height: 0.8;
+.main-nav ul {
+  display: flex;
+  list-style: none; /* No bulletpoints */
+  margin: 0;
+  padding: 0;
 }
 
-.content {
-  flex: 1;
-  padding: 80px;
+.main-nav li {
+  margin: 0 25px;
 }
 
-.section {
-  min-height: 60vh; /* Keeps sections feeling spacious */
-  margin-bottom: 100px;
+.main-nav a {
+  text-decoration: none; /* No underlines */
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #d68c5d; /* Terracotta orange on hover */
+}
+
+.header-contact a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+/* --- Main Layout --- */
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+/* --- About Section (Narrow & Tall) --- */
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.about-text {
+  flex: 0 0 35%; /* This makes the text column narrow */
+}
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.about-image-container {
+  flex: 0 0 55%;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  filter: grayscale(20%); /* Soft aesthetic */
+}
+
+/* --- Sections & Blog --- */
+section {
+  margin-bottom: 150px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .blog-entry {
-  margin-bottom: 30px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 15px;
+  max-width: 600px;
+  margin-bottom: 40px;
 }
 
 .blog-entry h3 a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #d68c5d;
+  font-size: 24px;
+}
+
+.blog-entry p {
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
 }
