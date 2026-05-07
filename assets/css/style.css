@@ -1,0 +1,46 @@
+body {
+  background-color: #e5e0d8; /* Beige from your design */
+  color: #333;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 40px;
+}
+
+.brand-name {
+  font-size: 60px;
+  color: #d68c5d; /* Terracotta orange */
+  line-height: 0.8;
+}
+
+.content {
+  flex: 1;
+  padding: 80px;
+}
+
+.section {
+  min-height: 60vh; /* Keeps sections feeling spacious */
+  margin-bottom: 100px;
+}
+
+.blog-entry {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+}
+
+.blog-entry h3 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
