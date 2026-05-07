@@ -3,24 +3,43 @@ layout: default
 title: Home
 ---
 
-<section id="about" class="section">
-  <div class="intro-flex">
-    <div class="text-content">
+<section id="about">
+  <div class="about-flex">
+    <div class="about-text">
       <h2>about me</h2>
-      <p>Professionally an Adops specialist working for a global advertising company Teads. In my spare time I create Pinterest content, develop SEO strategies, and explore GEO for my content.</p>
-      <p>Underneath all that I am a lover of wisdom – a pseudo philosopher.</p>
+      <p>Professionally an Adops specialist working for a global advertising company Teads. In my spare time I create Pinterest content, develop SEO strategies, and explore GEO for my content. I am constantly seeking the balance between technical precision and creative expression.</p>
+      <p>Underneath all that I am a lover of wisdom – a pseudo philosopher. I believe that every digital footprint we leave behind is a reflection of a deeper intent. My work in AdOps isn't just about pixels and tracking; it's about understanding the human experience in a digital landscape. This dual perspective allows me to approach problems with both a logical mind and a philosophical heart.</p>
+      <p>Whether I am optimizing a campaign or contemplating the nature of reality, my goal is always the same: to find clarity in the noise and meaning in the data.</p>
     </div>
+
+    <div class="about-image-container">
+      <img src="{{ '/assets/images/about-me-photo.jpg' | relative_url }}" alt="Iza Vene" class="about-photo">
     </div>
+  </div>
 </section>
 
-<section id="blog" class="section">
+<section id="work">
+  <h2 class="section-title">my work</h2>
+  <div class="work-grid">
+    <p>Currently optimizing global reach at <strong>Teads</strong>.</p>
+    <p>Past projects include Pinterest growth strategies, SEO audits for boutique brands, and local GEO exploration for niche content markets.</p>
+  </div>
+</section>
+
+<section id="blog">
   <h2 class="section-title">blog</h2>
   <div class="blog-container">
     {% for post in site.posts %}
       <article class="blog-entry">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-        <small>{{ post.date | date: "%b %d, %Y" }}</small>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      </article>
+    {% else %}
+      <article class="blog-entry">
+        <h3><a href="#">The Ethics of the Algorithm</a></h3>
+        <p>A placeholder exploration into how we balance user privacy with the necessity of data in a modern advertising ecosystem. Coming soon.</p>
+        <small>May 07, 2026</small>
       </article>
     {% endfor %}
   </div>
