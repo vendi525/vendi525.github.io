@@ -127,8 +127,14 @@ section {
   margin-bottom: 150px;
 }
 
+.section-text {
+  flex: 0 0 35%;
+  font-weight: 200;
+}
+
 .section-title {
   font-size: 32px;
+  font-weight: 200;
   margin-bottom: 40px;
 }
 
