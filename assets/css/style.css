@@ -1,16 +1,13 @@
-/* --- Global Styles --- */
-
-.google-sans-code-<uniquifier> {
+body {
   font-family: "Google Sans Code", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400; /* Standard weight, or 500 for slightly thicker */
   font-style: normal;
-  font-variation-settings:
-    "MONO" 1;
-}
-
-body {
-  background-color: #e5e0d8; /* Earthy beige */
+  font-variation-settings: "MONO" 1;
+  
+  /* Your existing styles */
+  background-color: #e5e0d8;
+  color: #333;
   margin: 0;
   line-height: 1.6;
 }
