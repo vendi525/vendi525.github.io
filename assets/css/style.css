@@ -7,10 +7,14 @@ body {
   line-height: 1.6;
 }
 
-/* --- Header & Top Nav --- */
+/* --- Global Fix for Header Background --- */
 .main-header {
   padding: 30px 60px;
-  background-color: #e5e0d8;
+  /* Match the beige background from your original design */
+  background-color: #e5e0d8; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-container {
@@ -21,9 +25,29 @@ body {
   margin: 0 auto;
 }
 
+/* --- THE LOGO FIX --- */
+.logo-box {
+  display: flex;
+  align-items: center;
+  /* Matches the scale/offset in your spec image */
+  padding-left: 10px; 
+}
+
 .site-logo {
-  height: 80px; /* Adjust based on your handwritten image */
-  width: auto;
+  /* This ensures the handwritten text matches the vertical scale of your design */
+  height: 90px; 
+  width: auto; /* Maintains the natural aspect ratio */
+  
+  /* Replicates the soft blending shown in the spec */
+  opacity: 0.9; 
+  
+  /* Ensures the logo has a consistent interaction boundary */
+  display: block; 
+}
+
+/* Optional: Slight color adjustment if the PNG's orange needs to pop more */
+.site-logo:hover {
+    filter: brightness(1.1);
 }
 
 .main-nav ul {
