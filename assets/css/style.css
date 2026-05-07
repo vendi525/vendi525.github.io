@@ -35,7 +35,7 @@ body {
 
 .site-logo {
   /* This ensures the handwritten text matches the vertical scale of your design */
-  height: 90px; 
+  height: 60px; 
   width: auto; /* Maintains the natural aspect ratio */
   
   /* Replicates the soft blending shown in the spec */
