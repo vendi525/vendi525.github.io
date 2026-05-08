@@ -1,4 +1,76 @@
-/* --- BASE STYLES --- */
+/* --- ABOUT ME SECTION (Rectangle Layout) --- */
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.about-text-column {
+    flex: 1;
+}
+
+.about-text-column p {
+    max-width: 400px; /* Keeping the narrow paragraph look */
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.about-photo-column {
+    flex: 1;
+    max-width: 400px; /* Forces the photo and caption to align */
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    filter: grayscale(20%);
+    margin-bottom: 15px;
+}
+
+.photo-caption {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+/* --- WORK SECTION (Horizontal Columns) --- */
+.work-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.work-col {
+    flex: 1;
+}
+
+.work-col h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.work-col p {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+/* --- BLOG SECTION (Fixed Lines & Category) --- */
+.blog-entry {
+    border-top: 1px solid #000; /* Thinner, black line */
+    max-width: 800px;
+    padding: 20px 0 40px 0; /* Lowered the content below the line */
+    margin-top: 20px;
+}
+
+.blog-category {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #333; /* Darker for better visibility */
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}/* --- BASE STYLES --- */
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
