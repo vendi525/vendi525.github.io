@@ -112,11 +112,12 @@ body {
 
 .about-text-column h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 300px;
-  margin-bottom: 40px;
+  font-size: 12vw; /* This makes the text 12% of the screen width */
+  line-height: 0.9; /* Tighter line height looks better for huge text */
+  text-transform: uppercase;
+  margin-bottom: 20px;
   font-weight: 700;
-  letter-spacing: 1px;
-  margin-top: 0; /* This ensures the 'ABOUT ME' title is perfectly level with the top of the photo */
+  letter-spacing: -2px; /* Tighter letters for that 'stamped' look */
 }
 
 /* --- WORK SECTION --- */
@@ -126,10 +127,12 @@ section {
 
 .section-title {
   font-family: "Archivo", sans-serif;
-  font-size: 300px;
-  font-weight: 700; /* Brutalist Bold */
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+  font-size: 12vw; /* This makes the text 12% of the screen width */
+  line-height: 0.9; /* Tighter line height looks better for huge text */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -2px; /* Tighter letters for that 'stamped' look */
 }
 
 .section-text {
