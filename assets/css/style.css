@@ -131,14 +131,9 @@ section {
   font-size: 8vw; /* This makes the text 12% of the screen width */
   line-height: 0.9; /* Tighter line height looks better for huge text */
   text-transform: uppercase;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
-  letter-spacing: -2px;
-  border-bottom: 1px solid #000;
-  width: 900%; 
-  display: block;
-  clear: both;
+  letter-spacing: -2px; /* Tighter letters for that 'stamped' look */
 }
 
 .section-text {
@@ -169,15 +164,9 @@ section {
 }
 
 .blog-entry {
-  border-bottom: 1px solid #000;
-  width: 100vw; /* Force width to viewport width */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 40px 60px 60px 60px; /* Added 60px side padding to keep text aligned */
-  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  border-top: 1px solid #000; /* The line on top of every entry */
+  max-width: 600px;
+  padding: 60px 0 40px 0; /* Creates the editorial breathing room */
 }
 
 .blog-category {
