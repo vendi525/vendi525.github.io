@@ -112,9 +112,9 @@ body {
 
 .about-text-column h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 70px;
+  font-size: 300px;
   margin-bottom: 40px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-top: 0; /* This ensures the 'ABOUT ME' title is perfectly level with the top of the photo */
 }
@@ -126,8 +126,8 @@ section {
 
 .section-title {
   font-family: "Archivo", sans-serif;
-  font-size: 70px;
-  font-weight: 500; /* Brutalist Bold */
+  font-size: 300px;
+  font-weight: 700; /* Brutalist Bold */
   margin-bottom: 40px;
   letter-spacing: 1px;
 }
