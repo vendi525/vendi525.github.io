@@ -110,7 +110,7 @@ body {
   float: right;
   width: 350px;
   height: auto;
-  margin-left: 40px;
+  margin-left: 50px;
   margin-bottom: 20px;
   filter: grayscale(20%); /* Soft aesthetic */
 }
@@ -131,6 +131,11 @@ section {
   font-weight: 200;
 }
 
+.section-header {
+  flex: 0 0 35%;
+  font-weight: 300;
+}
+  
 .section-title {
   font-size: 32px;
   font-weight: 200;
