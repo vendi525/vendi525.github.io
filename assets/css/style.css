@@ -96,16 +96,7 @@ body {
   padding: 60px;
 }
 
-/* --- About Section (Narrow & Tall) --- */
-.about-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 100px;
-}
-
 .about-text {
-  flex: 0 0 35%;
   font-weight: 200;
 }
 
@@ -120,9 +111,18 @@ body {
 }
 
 .about-photo {
-  width: 100%;
+  float: right;
+  width: 350px;
   height: auto;
+  margin-left: 40px;
+  margin-bottom: 20px;
   filter: grayscale(20%); /* Soft aesthetic */
+}
+
+#about::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* --- Sections & Blog --- */
