@@ -46,10 +46,10 @@ body {
 }
 
 .main-nav a {
-  text-decoration: none;
+  font-family: "Archivo", sans-serif;
   color: #333;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -59,9 +59,10 @@ body {
 }
 
 .header-contact a {
+  font-family: "Archivo", sans-serif;
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -96,11 +97,19 @@ body {
   margin-bottom: 20px;
   line-height: 1.6;
 }
+.about-text-column.quote {
+  font-family: "Geist Mono", monospace;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
 
 .about-text-column h2 {
+  font-family: "Archivo", sans-serif;
   font-size: 38px;
   margin-bottom: 40px;
-  font-weight: 200;
+  font-weight: 500;
+  letter-spacing: 1px;
   margin-top: 0; /* This ensures the 'ABOUT ME' title is perfectly level with the top of the photo */
 }
 
@@ -110,10 +119,11 @@ section {
 }
 
 .section-title {
-  font-size: 32px;
-  font-weight: 800; /* Brutalist Bold */
+  font-family: "Archivo", sans-serif;
+  font-size: 38px;
+  font-weight: 500; /* Brutalist Bold */
   margin-bottom: 40px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .section-text {
@@ -123,11 +133,20 @@ section {
   font-weight: 200;
 }
 
+.section-text h3 {
+  flex: 1; 
+  max-width: 33%; 
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+
 .work-container {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
+
 
 /* --- BLOG SECTION (Brutalist Lines) --- */
 .blog-container {
@@ -152,7 +171,8 @@ section {
 
 .blog-entry h3 a {
   text-decoration: none;
-  color: #d68c5d;
+  font-family: "Archivo", sans-serif;
+  color: #000;
   font-size: 28px;
   font-weight: 700; /* Heavy weight like your reference */
   letter-spacing: -0.5px;
