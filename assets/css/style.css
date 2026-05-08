@@ -112,7 +112,7 @@ body {
 
 .about-text-column h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 8vw; /* This makes the text 12% of the screen width */
+  font-size: 4vw; /* This makes the text 12% of the screen width */
   line-height: 0.9; /* Tighter line height looks better for huge text */
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -127,7 +127,7 @@ section {
 
 .section-title {
   font-family: "Archivo", sans-serif;
-  font-size: 8vw; /* This makes the text 12% of the screen width */
+  font-size: 4vw; /* This makes the text 12% of the screen width */
   line-height: 0.9; /* Tighter line height looks better for huge text */
   text-transform: uppercase;
   margin-bottom: 20px;
