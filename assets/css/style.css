@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Archivo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300; /* Fixed: weight must be a number */
   font-style: normal;
@@ -105,6 +105,7 @@ body {
 }
 .quote {
   font-family: "Geist Mono", monospace;
+  font-size: 18px; 
   font-weight: 300;
   margin-bottom: 20px;
   line-height: 1.6;
