@@ -72,38 +72,36 @@ body {
   padding: 60px;
 }
 
-/* --- ABOUT ME SECTION (Narrow Column Layout) --- */
-.about-text h2 {
-  font-size: 38px;
-  margin-bottom: 40px;
-  font-weight: 200;
+.about-container {
+  display: flex;
+  gap: 60px; /* Adjust this to change the space between the two columns */
+  align-items: flex-start;
 }
 
-.about-text p {
-  max-width: 350px; /* Matches photo width for the narrow column look */
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
-.about-text p.full-width {
-  max-width: 100%; 
-  clear: both;
-  padding-top: 20px;
+.about-text-column, 
+.about-photo-column {
+  flex: 1; /* Both sides take up equal space */
 }
 
 .about-photo {
-  float: right;
-  width: 350px;
+  width: 100%; /* Makes the photo fill its half of the rectangle */
   height: auto;
-  margin-left: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space between photo and the paragraph below it */
   filter: grayscale(20%);
 }
 
-#about::after {
-    content: "";
-    display: table;
-    clear: both;
+.about-text-column p,
+.about-photo-column p {
+  font-weight: 200;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-text-column h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  font-weight: 200;
+  margin-top: 0; /* This ensures the 'ABOUT ME' title is perfectly level with the top of the photo */
 }
 
 /* --- WORK SECTION --- */
@@ -119,9 +117,16 @@ section {
 }
 
 .section-text {
-  max-width: 500px;
+  flex: 1; 
+  max-width: 33%; 
+  margin-bottom: 0;
   font-weight: 200;
-  margin-bottom: 40px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 /* --- BLOG SECTION (Brutalist Lines) --- */
@@ -130,9 +135,9 @@ section {
 }
 
 .blog-entry {
-  border-top: 2px solid #b0aca5; /* The line on top of every entry */
+  border-top: 1px solid #000; /* The line on top of every entry */
   max-width: 600px;
-  padding: 40px 0; /* Creates the editorial breathing room */
+  padding: 60px 0 40px 0; /* Creates the editorial breathing room */
 }
 
 .blog-category {
