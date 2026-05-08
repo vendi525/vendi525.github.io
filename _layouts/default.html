@@ -1,44 +1,46 @@
-<section id="about">
-    <div class="about-container">
-        <div class="about-text-column">
-            <h2>ABOUT ME</h2>
-            <p>For those who have no introspection, Though they hear the teachings, ponder them, or meditate, Like water seeping from a leaking jar, Their learning will not settle in their memories. Shantideva</p>
-            <p>Like many others, I spend most of my days navigating the digital sphere. Currently, I am embarking on a journey of self-exploration, shaping my skillset and aspiring to bring value into the world that has shaped me.</p>
-            <p>Professionally, I am mastering the technicalities of the advertising industry. I study ad-tech tools and digital marketing psychology. I thrive in interdisciplinary environments; I love to listen to successful product development stories and learn about the psychology behind digital marketing.</p>
-        </div>
-        <div class="about-photo-column">
-            <img src="your-photo-path.jpg" alt="Iza Vene" class="about-photo">
-            <p class="photo-caption">As much as I love thinking, I also love trying out new technology and pushing the boundaries of my creativity, not only with visually appealing things, but with technical and "boring" ones as well. :)</p>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Iza Vene</title>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ page.layout }}-page">
 
-<section id="work">
-    <h2 class="section-title">WORK</h2>
-    <div class="work-grid">
-        <div class="work-col">
-            <h3>Ad Operations Specialist | Teads</h3>
-            <p>I manage troubleshoot and analyze open-web campaign performance. My work involves resolving complex tracking issues through GTM, manual JS pixels, and S2S integrations.</p>
-        </div>
-        <div class="work-col">
-            <h3>>SEO & Content Strategy</h3>
-            <p>I have developed optimized content for various digital landscapes, focusing on increasing search visibility and creating engaging narratives that drive traffic.</p>
-        </div>
-        <div class="work-col">
-            <h3>>Creative Projects & Web Systems</h3>
-            <p>I build and manage digital platforms like slavicpaganworld.com, handling everything from HTML/CSS design to tracking performance with GA4.</p>
-        </div>
-    </div>
-</section>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-box">
+                <a href="{{ '/' | relative_url }}">
+                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="iza vene" class="site-logo">
+                </a>
+            </div>
 
-<section id="blog">
-    <h2 class="section-title">BLOG</h2>
-    <div class="blog-container">
-        <div class="blog-entry">
-            <span class="blog-category">ETHICS</span>
-            <h3><a href="#">The Ethics of the Algorithm</a></h3>
-            <p>A placeholder exploration into how we balance user privacy with the necessity of data in a modern advertising ecosystem. Coming soon.</p>
-            <small>May 07, 2026</small>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}#about">about me</a></li>
+                    <li><a href="{{ '/' | relative_url }}#work">my work</a></li>
+                    <li><a href="{{ '/' | relative_url }}#blog">blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contact">
+                <a href="mailto:iza.vene4@gmail.com">iza.vene4@gmail.com</a>
+            </div>
         </div>
-    </div>
-</section>
+    </header>
+
+    <main class="content-wrapper">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; {{ "now" | date: "%Y" }} iza vene</p>
+    </footer>
+
+</body>
+</html>
