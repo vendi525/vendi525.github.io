@@ -106,6 +106,18 @@ body {
   font-weight: 200;
 }
 
+.about-text p {
+  max-width: 350px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.about-text p.full-width {
+  max-width: 100%; 
+  clear: both;
+  padding-top: 20px;
+}
+
 .about-photo {
   float: right;
   width: 350px;
@@ -129,6 +141,7 @@ section {
 .section-text {
   flex: 0 0 35%;
   font-weight: 200;
+  max-width: 500px;
 }
 
 .section-header {
@@ -143,8 +156,24 @@ section {
 }
 
 .blog-entry {
+  border-top: 2px solid #b0aca5;
   max-width: 600px;
   margin-bottom: 40px;
+}
+
+.blog-entry:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.blog-category {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .blog-entry h3 a {
