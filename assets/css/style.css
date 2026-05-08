@@ -200,3 +200,85 @@ section {
   margin-top: 10px;
   color: #888;
 }
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* 1. Tablet & Small Laptop (1024px and below) */
+@media (max-width: 1024px) {
+  .about-text-column h2,
+  .section-title {
+    font-size: 10vw; /* Scales titles down slightly */
+  }
+
+  .content-wrapper {
+    padding: 40px; /* Reduces side breathing room slightly */
+  }
+}
+
+/* 2. Mobile Phones (768px and below) */
+@media (max-width: 768px) {
+  /* Reset Header for Mobile */
+  .main-header {
+    padding: 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    justify-content: center;
+  }
+
+  .main-nav li {
+    margin: 0 10px;
+  }
+
+  /* Stack About & Work Columns */
+  .about-container, 
+  .work-container {
+    flex-direction: column; /* This is the key: vertical stacking */
+    gap: 30px;
+  }
+
+  .section-text {
+    max-width: 100%; /* No more 33% width on small screens */
+  }
+
+  /* Handle Massive Titles on Mobile */
+  .about-text-column h2,
+  .section-title {
+    font-size: 14vw; /* Bigger percentage so it stays impactful on tiny screens */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 0 20px 10px 20px; 
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+  }
+
+  /* Edge-to-Edge Blog Entries */
+  .blog-entry {
+    max-width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 30px 20px; 
+    box-sizing: border-box;
+    border-top: none;
+    border-bottom: 1px solid #000; /* Maintains the list look */
+  }
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+}
