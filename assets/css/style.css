@@ -262,15 +262,13 @@ section {
   /* Edge-to-Edge Blog Entries */
   .blog-entry {
     max-width: 100%;
-    width: auto;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    padding: 30px 20px; 
+    width: 100%;
+    position: static;
+    margin-left: 0; /* Removes the pull to the left edge */
+    padding: 30px 0; /* Vertical padding only; let the wrapper handle sides */
     box-sizing: border-box;
-    border-top: 1px solid #000; /* Maintains the list look */
-  }
-
+    border-top: 1px solid #000;
+    }
 
   body {
     overflow-x: hidden;
