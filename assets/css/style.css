@@ -106,10 +106,6 @@ body {
   font-weight: 200;
 }
 
-.about-image-container {
-  flex: 0 0 55%;
-}
-
 .about-photo {
   float: right;
   width: 350px;
