@@ -257,20 +257,18 @@ section {
     margin-left: -50vw;
     padding: 0 20px 10px 20px; 
     box-sizing: border-box;
-    border-bottom: 1px solid #000;
   }
 
   /* Edge-to-Edge Blog Entries */
   .blog-entry {
     max-width: 100%;
-    width: 100vw;
+    width: auto;
     position: relative;
     left: 50%;
     margin-left: -50vw;
     padding: 30px 20px; 
     box-sizing: border-box;
-    border-top: none;
-    border-bottom: 1px solid #000; /* Maintains the list look */
+    border-top: 1px solid #000; /* Maintains the list look */
   }
 
 
